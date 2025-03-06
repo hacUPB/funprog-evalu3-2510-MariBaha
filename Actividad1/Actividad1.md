@@ -10,10 +10,10 @@
 
 5. Diferencias entre lenguaje compilado e interpretado.
 
-| Lenguaje compilado | 
+ Lenguaje compilado  
 --
  En lugar de compilar el código fuente completo de una sola vez, un intérprete ejecuta el código línea por línea, traduciéndolo sobre la marcha. Esto permite una mayor flexibilidad, pero puede hacer que el programa sea más lento que los lenguajes compilados. Ejemplos de lenguajes interpretados son Python, JavaScript y Ruby.
 
- | Lenguaje interpretado |
+  Lenguaje interpretado 
 ---
  En lugar de compilar el código fuente completo de una sola vez, un intérprete ejecuta el código línea por línea, traduciéndolo sobre la marcha. Esto permite una mayor flexibilidad, pero puede hacer que el programa sea más lento que los lenguajes compilados. Ejemplos de lenguajes interpretados son Python, JavaScript y Ruby.
