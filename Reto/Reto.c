@@ -70,7 +70,7 @@ void leerNotas() {
         printf("Peso (1-100): "); 
         scanf("%f", &peso);
 
-        // Valida que nota y peso sean correctos y que la suma de pesos no exceda 100%
+        // Valida que la nota y el peso sean correctos y que la suma de pesos no pase el 100%
         if (nota < 0 || nota > 100 || peso <= 0 || peso > 100 || pesoTotal + peso > 100) {
             printf("Entrada inválida.\n"); 
             i--; 
@@ -146,11 +146,11 @@ void editarNota() {
     printf("Nuevo peso: "); 
     scanf("%f", &nuevoPeso);
 
-    // Calcula suma de pesos sin contar el actual
+    // Calcula la suma del peso sin contar el actual
     for (int j = 0; j < n; j++)
-        if (j != i) pesoTotal += pesos[j];
+        if (j != i) pesoTotal += peso [j];
 
-    // Valida entrada
+    // Valida la entrada
     if (nuevaNota < 0 || nuevaNota > 100 || nuevoPeso <= 0 || nuevoPeso > 100 || pesoTotal + nuevoPeso > 100) {
         printf("Valores inválidos.\n"); 
         return;
@@ -175,7 +175,7 @@ void eliminarNota() {
     // Desplaza los elementos hacia la izquierda para eliminar la nota
     for (int j = i; j < n - 1; j++) {
         notas[j] = notas[j + 1];
-        pesos[j] = pesos[j + 1];
+        peso[j] = peso[j + 1];
     }
 
     n--; // Reduce la cantidad de notas
